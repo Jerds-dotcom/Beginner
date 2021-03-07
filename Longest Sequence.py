@@ -22,3 +22,4 @@ def longestSquence(array):
 				left = left_count
 
 	return [left, right]
+# learned this at tech with tim
