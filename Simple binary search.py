@@ -2,7 +2,7 @@
 list_ = [i for i in range(1, 11)] 
 target = 6
 
-def search(array, target):
+def search(array, target): # returns the index of the target in a list/array
 	left = 0
 	right = len(array) -1 
 	while left <= right:
@@ -11,12 +11,12 @@ def search(array, target):
 		if array[mid] == target:
 			return mid
 
-		elif target < array[mid]: # 
-			right = mid - 1 # 
+		elif target < array[mid]:
+			right = mid - 1
 
 		else:
 			left = mid + 1 
 
-	return 'Target not in the list'
+	return 'Target not in the list' # if target not in the list
 
 search(list_, target)
